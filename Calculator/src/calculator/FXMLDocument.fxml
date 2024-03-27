@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="320" styleClass="linear-bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane id="anchorPane" layoutX="25.0" layoutY="21.0" prefHeight="428.0" prefWidth="272.0" styleClass="white-cl" stylesheets="@style.css" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="21.0">
+         <children>
+            <Region layoutX="6.0" layoutY="3.0" prefHeight="422.0" prefWidth="262.0" styleClass="region-set" stylesheets="@style.css" />
+            <Label layoutX="48.0" layoutY="43.0" styleClass="title-color" stylesheets="@style.css" text="CALCULATOR">
+               <font>
+                  <Font name="Arial Black" size="23.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.7725118483412322" endY="0.5971563981042654" startX="0.014218009478672985" startY="0.04739336492891">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.20392157137393951" green="0.3450980484485626" blue="0.003921568859368563" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.20392157137393951" green="0.3450980484485626" blue="0.003921568859368563" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6342281879194631">
+                           <color>
+                              <Color red="0.03529411926865578" green="0.05098039284348488" blue="0.4745098054409027" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.8313725590705872" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button graphicTextGap="5.0" layoutX="22.0" layoutY="150.0" mnemonicParsing="false" onAction="#handlerClear" prefHeight="43.0" prefWidth="108.0" styleClass="btn-number" stylesheets="@style.css" text="C">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="200.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnDiv" prefHeight="43.0" prefWidth="48.0" styleClass="operator-color" stylesheets="@style.css" text="÷">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="23.0" layoutY="204.0" mnemonicParsing="false" onAction="#num7" prefHeight="35.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="7">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="82.0" layoutY="204.0" mnemonicParsing="false" onAction="#num8" prefHeight="35.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="8">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="142.0" layoutY="204.0" mnemonicParsing="false" onAction="#num9" prefHeight="35.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="9">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="201.0" layoutY="204.0" mnemonicParsing="false" onAction="#btnMultiply" prefHeight="43.0" prefWidth="48.0" styleClass="operator-color" text="×">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="24.0" layoutY="259.0" mnemonicParsing="false" onAction="#num4" prefHeight="35.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="4">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="83.0" layoutY="259.0" mnemonicParsing="false" onAction="#num5" prefHeight="35.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="5">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="143.0" layoutY="259.0" mnemonicParsing="false" onAction="#num6" prefHeight="35.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="6">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="202.0" layoutY="259.0" mnemonicParsing="false" onAction="#btnSub" prefHeight="43.0" prefWidth="48.0" styleClass="operator-color" text="-">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="24.0" layoutY="315.0" mnemonicParsing="false" onAction="#num1" prefHeight="35.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="1">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="83.0" layoutY="315.0" mnemonicParsing="false" onAction="#num2" prefHeight="35.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="2">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="143.0" layoutY="315.0" mnemonicParsing="false" onAction="#num3" prefHeight="35.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="3">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="202.0" layoutY="315.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="43.0" prefWidth="48.0" styleClass="operator-color" text="+">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="24.0" layoutY="371.0" mnemonicParsing="false" onAction="#num0" prefHeight="43.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="0">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="83.0" layoutY="371.0" mnemonicParsing="false" onAction="#numDot" prefHeight="43.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text=".">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="141.0" layoutY="371.0" mnemonicParsing="false" onAction="#btnEqual" prefHeight="43.0" prefWidth="108.0" styleClass="operator-color" text="=">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="5.0" layoutX="142.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="35.0" prefWidth="48.0" styleClass="btn-number" stylesheets="@style.css" text="&lt;">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Button>
+            <TextField fx:id="handlerDisplay" alignment="CENTER_RIGHT" editable="false" layoutX="22.0" layoutY="84.0" prefHeight="43.0" prefWidth="229.0" text="0">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </TextField>
+            <Text fx:id="handlerCalcDisp" fill="#0000003e" layoutX="26.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="69.0">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+.linear-bg{
+    -fx-background-color: linear-gradient(#5356FF, #378CE7, #67C6E3, #DFF5FF);
+}
+
+.white-cl{
+    -fx-background-color: #fff;
+}
+
+.region-set{
+    -fx-border-color: black;
+    -fx-border-radius: 20px;
+}
+
+.operator-color{
+    -fx-background-color: linear-gradient(#5356FF, #378CE7, #67C6E3, #DFF5FF);
+    -fx-border-style: outset;
+}
+
+.operator-color:hover{
+    -fx-background-color: #7AA2E3;
+    -fx-border-color: #a4a4a4;
+    -fx-border-style: solid;
+}
+
+.operator-color:pressed{
+    -fx-background-color: #51829B;
+}
+
+.btn-number:pressed{
+    -fx-background-color: #51829B;
+}
+
